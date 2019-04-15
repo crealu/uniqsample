@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>UNIQ TABLE</title>
+    <link rel="stylesheet" type="text/css" href="css/uniq-table.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="media/fava.png">-->
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <a id="home-link" href=""><img id="logo" src="img/ut.png"/></a>
+      <div id="nav-btn" onclick="menu()">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class='bar bar3'></div>
+      </div>
+      <div id="dropdown-menu">
+        <ul id="mobile-list">
+          <li><a class="mobile-link" id="waves-link" onclick="changeContent('who-we-are', 0)">WHO WE ARE</a></li>
+          <li><a class="mobile-link" onclick="changeContent('company', 0)">COMPANY</a></li>
+          <li><a class="mobile-link" onclick="changeContent('business', 0)">BUSINESS</a></li>
+          <li><a class="mobile-link" onclick="changeContent('people', 0)">PEOPLE</a></li>
+          <li><a class="mobile-link" onclick="changeContent('news', 0)">NEWS</a></li>
+          <li><a class="mobile-link" onclick="changeContent('magazine', 0)">UNIQTABLE MAGAZINE</a></li>
+          <li><a class="mobile-link" onclick="changeContent('contact', 0)">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="other-sites">
+      <ul>
+        <li><a href="https://codepen.io/lucidcode6/" target="_blank"><img src="https://imageog.flaticon.com/icons/png/512/54/54997.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" class="social-img"/></a></li>
+        <li><a href="https://www.youtube.com/channel/UCD6eUjaE7HgFL0QMFBSjElg?view_as=subscriber" target="_blank"><img src="https://image.flaticon.com/icons/svg/54/54300.svg" class="social-img"/></a></li>
+        <li><a href="https://www.instagram.com/lucidlycreative/" target="_blank"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/5e/3b/e95e3b25509d467e5698290b1427135d.png" class="social-img" id="ig"/></a></li>
+      </ul>
+    </div>
+
+    <!-- body starts here -->
+    <div id="home-content" class="home-page-section">
+      <div id="intro-wrapper">
+        <div id="name-slide">
+          <h1 id="ut-animation-title"><!--UNIQ TABLE--></h1>
+        </div>
+        <div id="roles-container">
+          <ul id="roles">
+            <li class="role" id="digital-r">
+              <p class="role-text">PROJECT</p>
+              <div class="mask" id="mask-1"></div>
+            </li>
+            <li class="role" id="marketing-r">
+              <p class="role-text">DESIGN</p>
+              <div class="mask" id="mask-2"></div>
+            </li>
+            <li class="role" id="company-r">
+              <p class="role-text">COMPANY</p>
+              <div class="mask" id="mask-3"></div>
+            </li>
+          </ul>
+          <div id="slide-img-wrapper">
+            <img src="img/pagodacrop.png" id="slide-img"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="who-we-are-content-home" class="home-page-section">
+      <div class="section-title-container">
+        <h2 class="section-title-text" id="who-we-are-title">WHO WE ARE</h2>
+        <!--<div id="black-div"></div>-->
+      </div>
+      <div class="sub-text-container">
+        <p class="sub-text">
+          会社名 - 株式会社ユニークテーブル / UNIQ TABLE Inc.<br>
+          〒111-0053 - 東京都台東区浅草橋3-30-5-201<br>
+          設立年月日 - 2018年2月14日<br>
+          代表取締役 - 松下英樹/ Hideki Matsushita<br>
+        </p>
+      </div>
+      <div class="wwa-btn-container">
+        <button id="wwa-read-more" onclick="changeContent('who-we-are', 1)">READ MORE</button>
+      </div><br><br><br><br>
+      <div class="info-row">
+        <div class="info-col" onclick="changeContent('company', 1)">
+          <div class="img-title-wrapper">
+            <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="info-img"/>
+          </div>
+          <h2 class="info-title">COMPANY</h2>
+          <div class="info-text-wrapper">
+            <p class="info-text">A project design company</p>
+          </div>
+          <div class="info-btn-wrapper">
+            <div class="read-more-line"></div>
+            <button class="info-btn">Read more</button>
+          </div>
+        </div>
+        <div class="info-col" onclick="changeContent('business', 1)">
+          <div class="img-title-wrapper">
+            <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_business.jpg" class="info-img"/>
+          </div>
+          <h2 class="info-title">BUSINESS</h2>
+
+          <div class="info-text-wrapper">
+            <p class="info-text">Our business</p>
+          </div>
+          <div class="info-btn-wrapper">
+            <div class="read-more-line"></div>
+            <button class="info-btn">Read More</button>
+          </div>
+        </div>
+        <div class="info-col" onclick="changeContent('people', 1)">
+          <div class="img-title-wrapper">
+            <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_people.jpg" class="info-img"/>
+          </div>
+          <h2 class="info-title">PEOPLE</h2>
+          <div class="info-text-wrapper">
+            <p class="info-text">Credible and dedicated</p>
+          </div>
+          <div class="info-btn-wrapper">
+            <div class="read-more-line"></div>
+            <button class="info-btn">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="news-content-home" class="home-page-section">
+      <div class="section-title-container">
+        <h2 class="section-title-text" id="news-title">NEWS</h2>
+      </div>
+      <div class="info-row">
+        <div class="left-info-col">
+          <div class="featured-col">
+            <div class="featured-img-wrapper">
+              <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="featured-img"/>
+            </div>
+            <div class="content-time-wrapper">
+              <p class="content-time-info">- NEWS 2019/4/5</p>
+            </div>
+            <div class="img-details-wrapper">
+              <p class="img-details-info">(new content here)</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-info-col">
+          <ul class="right-info-list">
+            <li class="righthand-item">
+              <div class="righthand-img-wrapper">
+                <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="righthand-img"/>
+              </div>
+              <div class="righthand-ct-wrapper">
+                <p class="righthand-ct-info">- NEWS 2019/4/5</p>
+              </div>
+              <div class="righthand-details-wrapper">
+                <p class="righthand-details-info">(new content here)</p>
+              </div>
+            </li>
+            <li class="righthand-item">
+              <div class="righthand-img-wrapper">
+                <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="righthand-img"/>
+              </div>
+              <div class="righthand-ct-wrapper">
+                <p class="righthand-ct-info">- NEWS 2019/4/5</p>
+              </div>
+              <div class="righthand-details-wrapper">
+                <p class="righthand-details-info">(new content here)</p>
+              </div>
+            </li>
+            <li class="righthand-item">
+              <div class="righthand-img-wrapper">
+                <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="righthand-img"/>
+              </div>
+              <div class="righthand-ct-wrapper">
+                <p class="righthand-ct-info">- NEWS 2019/4/5</p>
+              </div>
+              <div class="righthand-details-wrapper">
+                <p class="righthand-details-info">(new content here)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="news-btn-container">
+        <button class="news-read-more-btn">VIEW ALL</button>
+      </div>
+    </div>
+
+    <div id="magazine-content-home" class="home-page-section">
+      <div class="section-title-container">
+        <h2 class="section-title-text" id="magazine-title">MAGAZINE</h2>
+      </div>
+      <div class="info-row">
+        <div class="left-info-col">
+          <div class="featured-col">
+            <div class="featured-img-wrapper">
+              <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="featured-img"/>
+            </div>
+            <div class="content-time-wrapper">
+              <p class="content-time-info">- NEWS 2019/4/5</p>
+            </div>
+            <div class="img-details-wrapper">
+              <p class="img-details-info">(new content here)</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-info-col">
+          <ul class="right-info-list">
+            <li class="righthand-item">
+              <div class="righthand-img-wrapper">
+                <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="righthand-img"/>
+              </div>
+              <div class="righthand-ct-wrapper">
+                <p class="righthand-ct-info">- NEWS 2019/4/5</p>
+              </div>
+              <div class="righthand-details-wrapper">
+                <p class="righthand-details-info">(new content here)</p>
+              </div>
+            </li>
+            <li class="righthand-item">
+              <div class="righthand-img-wrapper">
+                <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="righthand-img"/>
+              </div>
+              <div class="righthand-ct-wrapper">
+                <p class="righthand-ct-info">- NEWS 2019/4/5</p>
+              </div>
+              <div class="righthand-details-wrapper">
+                <p class="righthand-details-info">(new content here)</p>
+              </div>
+            </li>
+            <li class="righthand-item">
+              <div class="righthand-img-wrapper">
+                <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="righthand-img"/>
+              </div>
+              <div class="righthand-ct-wrapper">
+                <p class="righthand-ct-info">- NEWS 2019/4/5</p>
+              </div>
+              <div class="righthand-details-wrapper">
+                <p class="righthand-details-info">(new content here)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="news-btn-container">
+        <button class="news-read-more-btn">VIEW ALL</button>
+      </div>
+    </div>
+
+    <div class="own-content" id="who-we-are-content">
+      <div class="section-title-container">
+        <h2 class="section-title-text">WHO WE ARE</h2>
+      </div><br><br><br><br>
+      <div class="section-details">
+        <div class="info-row">
+          <div class="info-col-people" onclick="changeContent('company', 1)">
+            <div class="img-title-wrapper">
+              <img src="https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?w=848&ssl=1 848w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?resize=150%2C150&ssl=1 150w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?resize=300%2C300&ssl=1 300w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?resize=768%2C768&ssl=1" class="info-img"/>
+            </div>
+            <h2 class="info-title">COMPANY</h2>
+            <div class="info-text-wrapper">
+              <p class="info-text">A project design company</p>
+            </div>
+            <div class="info-btn-wrapper">
+              <div class="read-more-line"></div>
+              <button class="info-btn">Read more</button>
+            </div>
+          </div>
+          <div class="info-col-people" onclick="changeContent('business', 1)">
+            <div class="img-title-wrapper">
+              <img src="https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?w=848&ssl=1 848w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?resize=150%2C150&ssl=1 150w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?resize=300%2C300&ssl=1 300w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?resize=768%2C768&ssl=1 768w" class="info-img"/>
+            </div>
+            <h2 class="info-title">BUSINESS</h2>
+
+            <div class="info-text-wrapper">
+              <p class="info-text">Our business</p>
+            </div>
+            <div class="info-btn-wrapper">
+              <div class="read-more-line"></div>
+              <button class="info-btn">Read More</button>
+            </div>
+          </div>
+          <div class="info-col-people" onclick="changeContent('people', 1)">
+            <div class="img-title-wrapper">
+              <img src="https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?w=848&ssl=1 848w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?resize=150%2C150&ssl=1 150w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?resize=300%2C300&ssl=1 300w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?resize=768%2C768&ssl=1 768w" class="info-img"/>
+            </div>
+            <h2 class="info-title">PEOPLE</h2>
+            <div class="info-text-wrapper">
+              <p class="info-text">Credible and dedicated</p>
+            </div>
+            <div class="info-btn-wrapper">
+              <div class="read-more-line"></div>
+              <button class="info-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="own-content" id="company-content">
+      <div class="section-title-container">
+        <h2 class="section-title-text">COMPANY</h2>
+      </div>
+      <div class="info-row">
+        <div class="info-col-comp" onclick="changeContent('company', 1)">
+          <div class="img-title-wrapper">
+            <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_company_index.jpg" class="info-img"/>
+          </div>
+          <h2 class="info-title">COMPANY</h2>
+          <div class="info-text-wrapper">
+            <p class="info-text">A project design company</p>
+          </div>
+          <div class="info-btn-wrapper">
+            <div class="read-more-line"></div>
+            <button class="info-btn">Read more</button>
+          </div>
+        </div>
+        <div class="info-col-comp" onclick="changeContent('business', 1)">
+          <div class="img-title-wrapper">
+            <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_business.jpg" class="info-img"/>
+          </div>
+          <h2 class="info-title">BUSINESS</h2>
+
+          <div class="info-text-wrapper">
+            <p class="info-text">Our business</p>
+          </div>
+          <div class="info-btn-wrapper">
+            <div class="read-more-line"></div>
+            <button class="info-btn">Read More</button>
+          </div>
+        </div>
+        <div class="info-col-comp" onclick="changeContent('people', 1)">
+          <div class="img-title-wrapper">
+            <img src="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/thumb_people.jpg" class="info-img"/>
+          </div>
+          <h2 class="info-title">PEOPLE</h2>
+          <div class="info-text-wrapper">
+            <p class="info-text">Credible and dedicated</p>
+          </div>
+          <div class="info-btn-wrapper">
+            <div class="read-more-line"></div>
+            <button class="info-btn">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="own-content" id="business-content">
+      <div class="section-title-container">
+        <h2 class="section-title-text">BUSINESS</h2>
+      </div><br><br><br><br>
+      <div class="section-details">
+        <div class="business-section-container">
+          <div class="bs-title-container">
+            <h3 class="bs-title">ABOUT</h3>
+          </div>
+          <div class="bs-details-container">
+            <p class="bs-details">ユーザーは膨大なWEBサイトやSNSから嗜好する情報を取捨選択しています。オンライン上での情報発信はSNSを使って誰もが簡単にできるようになりましたが、効果的にユーザーに情報を届けるためにはやはり専門性が必要とされます。クライアント様のパートナーとして、デジタルマーケティング全般のサポートをさせていただきます。</p>
+          </div>
+        </div>
+        <div class="business-section-container">
+          <div class="bs-title-container">
+            <h3 class="bs-title">WHY DIGITAL MARKETING?</h3>
+          </div>
+          <div class="bs-details-container">
+            <p class="bs-details">デジタルマーケティングはいまや欠かせない時代になりました。スマートフォンやパソコン、タブレットを肌身離さず持ち運び、多くの時間をWEBサイトやSNSの閲覧に費やしています。どこかに旅行に出るときも、多くの人々は旅先の情報収集や予約をオンライン上で済ませています。オンライン上で情報発信を発信し、認知されることが極めて重要です。</p>
+
+            <p class="bs-details">そして、かつてはテレビ・ラジオ・新聞・雑誌に巨額の広告費を払って、ユーザーに情報を発信する手段しかありませんでした。しかし、インターネットやSNSの普及によって、限られた予算で誰もがユーザーに媒体を通さずに直接情報を発信することが可能となりました。</p>
+
+            <p class="bs-detials">インターネットやSNSを活用したデジタルマーケティングの重要性・必要性はこれからどんどん増していく一方です。</p>
+          </div>
+        </div>
+        <div class="business-section-container">
+          <div class="bs-title-container">
+            <h3 class="bs-title">MERIT</h3>
+          </div>
+          <div class="bs-details-container">
+            <p class="bs-details">どのような情報をどのようなユーザー像に届けたいのかを決定した上で、どのような方法でその情報を届けるか、戦略と計画を立てて、コンテンツ制作や広告運用などをデジタルマーケティング全般を私たちがサポートします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="business-section-container">
+        <div id="recommended-details">MONTHLY CONTRACT</div>
+        <div id="package-details">
+          <div id="packages-row">
+            <div class="package-col" onclick="packageSelect(1)" id="package-one">
+              <div class="package-title-wrapper">
+                <h2 class="package-title">LIGHT PLAN</h2>
+              </div>
+              <div class="package-text-wrapper">
+
+              </div>
+              <div class="package-price-wrapper">
+                <p class="package-price">¥ 500</p>
+              </div>
+              <!--<div class="package-btn-wrapper">
+                <button class="package-btn">Select</button>
+              </div>-->
+            </div>
+            <div class="package-col" onclick="packageSelect(2)" id="package-two">
+              <div class="package-title-wrapper" >
+                <h2 class="package-title">REGULAR PLAN</h2>
+              </div>
+              <div class="package-text-wrapper">
+
+              </div>
+              <div class="package-price-wrapper">
+                <p class="package-price">¥ 790</p>
+              </div>
+            </div>
+            <div class="package-col" onclick="packageSelect(3)" id="package-three">
+              <div class="package-title-wrapper">
+                <h2 class="package-title">PREMIUM PLAN</h2>
+              </div>
+              <div class="package-text-wrapper">
+
+              </div>
+              <div class="package-price-wrapper">
+                <p class="package-price">¥ 1500</p>
+              </div>
+            </div>
+          </div><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="own-content" id="people-content">
+      <div class="section-title-container">
+        <h2 class="section-title-text">PEOPLE</h2>
+      </div><br><br><br><br>
+      <div class="section-details">
+        <div class="info-row">
+          <div class="info-col-people">
+            <div class="img-title-wrapper-people">
+              <img src="https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?w=848&ssl=1 848w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?resize=150%2C150&ssl=1 150w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?resize=300%2C300&ssl=1 300w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Hideki-1.png?resize=768%2C768&ssl=1" class="info-img"/>
+            </div>
+            <h2 class="info-title">松下　英樹</h2>
+            <div class="info-text-wrapper">
+              <p class="info-text">CEO</p>
+            </div>
+            <div class="info-btn-wrapper">
+              <div class="read-more-line"></div>
+              <button class="info-btn-people-cont">慶應義塾大学法学部法律学科卒。三菱UFJ銀行、三菱UFJモルガン・スタンレー証券M&Aアドバイザリー部を経て、株式ユニークテーブルを創業。使用言語：日本語・英語</button>
+            </div>
+          </div>
+          <div class="info-col-people">
+            <div class="img-title-wrapper-people">
+              <img src="https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?w=848&ssl=1 848w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?resize=150%2C150&ssl=1 150w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?resize=300%2C300&ssl=1 300w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/Mark-1.png?resize=768%2C768&ssl=1 768w" class="info-img"/>
+            </div>
+            <h2 class="info-title">Mark Pandi</h2>
+
+            <div class="info-text-wrapper">
+              <p class="info-text">CMO</p>
+            </div>
+            <div class="info-btn-wrapper">
+              <div class="read-more-line"></div>
+              <button class="info-btn-people-cont">南デンマーク大学MBA修了。ドイツ、デンマーク、スイス、ハンガリーでのデジタルマーケティング実績を誇る。
+
+使用言語：英語・ハンガリー語ドイツ語・デンマーク語</button>
+            </div>
+          </div>
+          <div class="info-col-people" >
+            <div class="img-title-wrapper-people">
+              <img src="https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?w=848&ssl=1 848w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?resize=150%2C150&ssl=1 150w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?resize=300%2C300&ssl=1 300w, https://i2.wp.com/uniq-table.com/wp/wp-content/uploads/2018/12/ROLI-PIC_bright.png?resize=768%2C768&ssl=1 768w" class="info-img"/>
+            </div>
+            <h2 class="info-title">Roland Illes</h2>
+            <div class="info-text-wrapper">
+              <p class="info-text">CINEMATOGRAPHER</p>
+            </div>
+            <div class="info-btn-wrapper">
+              <div class="read-more-line"></div>
+              <button class="info-btn-people-cont">南デンマーク大学MBA修了。デンマーク、ポルトガル、ハンガリー各国でグラフィック業務に従事。大手自動車メーカーはじめ実績多数。
+
+使用言語：英語・ハンガリー語　デンマーク語</button>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br><br>
+    </div>
+    <div class="own-content" id="news-content">
+      <div class="section-title-container">
+        <h2 class="section-title-text">NEWS</h2>
+      </div>
+    </div>
+    <div class="own-content" id="magazine-content">
+      <div class="section-title-container">
+        <h2 class="section-title-text">UNIQTABLE MAGAZINE</h2>
+      </div>
+    </div>
+    <div class="own-content" id="contact-content">
+      <div class="section-title-container">
+        <h2 class="section-title-text">CONTACT</h2>
+      </div>
+    </div>
+    <br><br>
+
+    <footer id="home-page-footer">
+      <div class="footer-content">
+        <div class="section-title-container">
+          <img class="section-title-text" id="footer-title" src="img/ut-text-white.png"/>
+        </div>
+        <div class="footer-links-container">
+          <ul class="footer-links-list">
+            <li class="footer-link-item" onclick="changeContent('company', 1)">
+              <a class="footer-link">COMPANY</a>
+            </li>
+            <li class="footer-link-item" onclick="changeContent('business', 1)">
+              <a class="footer-link">BUSINESS</a>
+            </li>
+            <li class="footer-link-item" onclick="changeContent('people', 1)">
+              <a class="footer-link">PEOPLE</a>
+            </li>
+            <li class="footer-link-item" onclick="changeContent('news', 1)">
+              <a class="footer-link">NEWS</a>
+            </li>
+            <li class="footer-link-item" onclick="changeContent('magazine', 1)">
+              <a class="footer-link">MAGAZINE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact-btn-container">
+          <button class="footer-contact-btn">(mail logo) UNIQTABLE</button>
+        </div>
+
+      </div>
+    </footer>
+
+    <div id="content-container" class="topic-content"></div>
+
+    </div>
+
+    <div id="modal">
+      <span id="exit-btn" onclick="closeModal()">x</span>
+      <form id="the-form" action="send" method="POST">
+        <div id="gets-package"></div>
+        <input class="form-input" placeholder="Name" name="name">
+        <input class="form-input" placeholder="Email" name="email">
+        <input id="package-input" name="package">
+        <textarea class="form-textbox" placeholder="Message" name="message"></textarea>
+        <!--<div id="more-details">
+          <button onclick="moreFormDetails()" id="help-you">Help us help you</button>
+        </div>--><br><br>
+        <button type="submit" id="send-email-btn">Send</button>
+      </form>
+    </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/uniq-table.js"></script>
+  </body>
+</html>

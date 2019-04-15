@@ -1,0 +1,32 @@
+Heading to Kyoto? Looking for a more local experience or craving high-end design?
+Then consider a visit to Kyoto State Guest House, a place where each detail is meticulously thought-out.
+The place creates a vibe that is hard to describe with words.
+
+Before entering the site, you are required to go through an airport-like security check.
+You place your belongings and shoes into lockers at the lobby's front entrance.
+
+Aesthetics and techniques developed over 1,200 years have been further honed here.
+They create the ultimate setting for Japanese hospitality in today's global society.
+
+
+SMALL EDITS
+
+lightning -> lighting
+
+Japanese-feel -> Japanese-like (Japanese-esqe)
+
+... materials such as wood indoors -> ... materials, such as wood, indoors
+
+wondering -> wandering
+
+Probably it would be possible -> It would probably be possible (?)
+
+Unluckily -> Unlucky for us (Unfortunately)
+
+one of the curious ones -> curious minded (more curious)
+
+The smell of fresh tatami, the natural light reflecting on shiny wooden floors, the stunning view of the garden and the numerous craftworks representing the most precious materials of Japan are all understating the same fact: Japan loves nature and they know how to incorporate it into interior design in the most elegant ways
+
+to
+
+The smell of fresh tatami, the natural light reflecting on shiny wooden floors, the stunning view of the garden and the numerous craftwork of precious Japanese materials all understate the same fact. Japan loves nature and they know how to incorporate it into interior design in the most elegant ways.
